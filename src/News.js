@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Draggable from "react-draggable";
 
 let apiUrl = "https://api.nytimes.com/svc/topstories/v2";
 let apiKey = "Ob5kcWUnGBzfGur6XGSa6aNGX5ZGVz6n";
