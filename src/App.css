@@ -1,38 +1,188 @@
-.App {
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 32px;
+}
+body, html {
+  background-image: url("https://wallpaperplay.com/walls/full/f/b/b/86225.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  margin: 0;
+  color:black;
+}
+h1{
   text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+}
+h5{
+  text-align: center;
+  font-style: italic;
+  font-size: x-large;
+  color:#1F262A;
+}
+section {
+ display: flex;
+}
+section div{
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  text-align: center;
+  color:black;
+  background-image: url("https://cff2.earth.com/uploads/2017/11/08174338/How-ice-forms-inside-of-clouds.jpg");
+  background-size: 180%;
+  padding-top: 1.5em;
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 600px) {
+  section {
+    display: block;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  letter-spacing: 2px;
+  margin-top: 24px;
+  color: black;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 35px;
+}
+h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 24px;
+  color: black;
+}
+
+a {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  color: #333;
+}
+
+/* ToDo Component Styles */
+#todolist{
+  float: right;
+  max-width: 25em;
+  background:#C6C6C6;
+  background-size: 40em 40em;
+  padding:0.3em 1.2em;
+  margin:0 0.1em 0.1em 0;
+  border-radius: 20px;
+  
+}
+
+.todo-input {
+  font-size: 17px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: none;
+  width: 97%;
+  padding: 15px 10px;
+  padding-left: 5px;
+  background:676767;
+  color:#848689;
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.todo {
+  margin: 32px 0px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  font-size: 20px;
+}
+
+.checkbox {
+  width: 50px;
+  height: 20px;
+  border-radius: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+  background:white;
+  font-size: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 1px solid black;
+  transition: all 300ms ease;
 }
 
-.App-link {
-  color: #61dafb;
+.checkbox:hover {
+  opacity: 0.3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.delete {
+  margin-left: auto;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  opacity: 0.8;
+}
+
+.drag-box {
+  padding: 30px;
+  cursor: move;
+  
+}
+
+input::placeholder {
+  color:black;
+}
+
+.closebtn {
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.1em 0.1em 0;
+  border:0.16em solid rgba(255,255,255,0);
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-weight: 600;
+  color:black;
+  text-align:center;
+  transition: all 0.2s;
+  text-transform:uppercase;
+  font-size: 15px;
+  background-color: rgb(165, 216, 243);
+}
+.closebtn:hover {
+  border-color:black;
+  padding:0.3em 1.2em;
+  margin:0 0.1em 0.1em 0;
+  border:0.16em solid rgba(255,255,255,0);
+}
+#news{
+  background:#C6C6C6;
+  text-align: center;
+  padding:1.0em 2.0em;
+  margin:0 0.5em 0.5em 0;
+  border-radius: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#image{
+  border-radius: 20px;
+}
+@media all and (max-width:30em){
+  .closebtn {
+    display:block;
+    margin:0.2em auto;
   }
 }
